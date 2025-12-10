@@ -3,6 +3,9 @@
   <id>org.msweet.htmldoc</id>
   <name>HTMLDOC</name>
   <summary>HTML Conversion Software</summary>
+  <developer id="org.msweet">
+    <name>Michael R Sweet</name>
+  </developer>
   <url type="homepage">https://www.msweet.org/htmldoc/</url>
   <url type="bugtracker">https://github.com/michaelrsweet/htmldoc/issues</url>
   <metadata_license>CC0-1.0</metadata_license>
@@ -12,6 +15,9 @@
     <control>keyboard</control>
     <control>touch</control>
   </supports>
+  <provides>
+    <binary>htmldoc</binary>
+  </provides>
   <description>
     <p>HTMLDOC is a program that reads HTML and Markdown source files or web pages and generates corresponding EPUB, HTML, PostScript, or PDF files with an optional table of contents.</p>
   </description>
@@ -24,35 +30,21 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.9.15" date="2022-02-05" urgency="high">
+    <release version="1.9.21" date="2025-09-12" urgency="high">
       <description>
-	<p>HTMLDOC 1.9.15 is a bug fix release. Changes include:</p>
-	<ul>
-	  <li>
-	    <p>Fixed a potential heap overflow bug with GIF images (Issue #461)</p>
-	  </li>
-	  <li>
-	    <p>Fixed a potential double-free bug with PNG images (Issue #462)</p>
-	  </li>
-	  <li>
-	    <p>Fixed a potential stack overflow bug with GIF images (Issue #463)</p>
-	  </li>
-	  <li>
-	    <p>Fixed a potential heap underflow bug with empty attributes (Issue #464)</p>
-	  </li>
-	  <li>
-	    <p>Fixed a potential stack overflow bug with BMP images (Issue #466)</p>
-	  </li>
-	  <li>
-	    <p>Fixed a potential heap overflow bug with the table-of-contents (Issue #467)</p>
-	  </li>
-	  <li>
-	    <p>Fixed a potential heap overflow bug with headings (Issue #468)</p>
-	  </li>
-	  <li>
-	    <p>Fixed a potential stack overflow bug with GIF images (Issue #470)</p>
-	  </li>
-	</ul>
+        <p>HTMLDOC 1.9.21 is a bug fix release. Changes include:</p>
+        <ul>
+          <li>Updated HTTP/HTTPS connection error reporting to include the reason.</li>
+          <li>Updated markdown parser.</li>
+          <li>Updated the HTTP/HTTPS connection timeout to 5 minutes (Issue #541)</li>
+          <li>Fixed a bug in the new PDF link code (Issue #536)</li>
+          <li>Fixed a bug in the number-up code (Issue #539)</li>
+          <li>Fixed a regression in leading whitespace handling (Issue #540)</li>
+          <li>Fixed a bug in numbered heading support (Issue #543)</li>
+          <li>Fixed a bug with setting the header on the first page (Issue #544)</li>
+          <li>Fixed paths in the HTMLDOC snap (Issue #545)</li>
+          <li>Binaries are available from Github for Windows 10+ and macOS 11+, and through the Snapcraft store for Linux.</li>
+        </ul>
       </description>
     </release>
   </releases>
